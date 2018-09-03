@@ -6,3 +6,17 @@ class Post
     @title = title
     @@ << self
   end
+  
+  def self.all
+    @@all
+  end
+  
+  def author_name
+    if self.author == nil
+      nil
+    else
+      self.author.name
+    end
+  end
+  
+end
